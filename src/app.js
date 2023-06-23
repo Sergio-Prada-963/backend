@@ -1,7 +1,7 @@
 import express from "express";
 import categoriaRouter from "./routes/categorias.routes.js";
 const app = express();
-app.set("port",5000);
+app.set("port",4001);
 //Routes
-app.use(categoriaRouter);
+app.use("/api/categoria",categoriaRouter);
 export default app;
